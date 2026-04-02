@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Safina - Asisten Keuangan AI untuk Muslim Modern</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
@@ -99,13 +100,13 @@
     </header>
 
     <!-- Hero Section -->
-    <main class="pt-32 pb-0 relative">
+    <main class="pt-24 md:pt-32 pb-0 relative overflow-hidden">
       <div class="container mx-auto px-6 text-center max-w-5xl relative z-10">
         <!-- Badge -->
-        <div
-          class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 text-primary text-sm font-semibold mb-8 border border-cyan-100"
+        <!--<div
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 text-primary text-xs md:text-sm font-semibold mb-8 border border-cyan-100"
         >
-          <span class="w-2 h-2 rounded-full bg-primary relative flex h-2 w-2">
+          <span class="w-2 h-2 rounded-full bg-primary relative flex">
             <span
               class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"
             ></span>
@@ -114,19 +115,28 @@
             ></span>
           </span>
           Asisten Keuangan AI untuk Muslim Modern
-        </div>
+        </div>-->
 
         <!-- Headlines -->
         <h1
-          class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-[1.15]"
+          class="text-3xl md:text-6xl font-extrabold text-gray-900 my-6 leading-[1.20]"
         >
-          Kelola Keuangan Lebih<br />Tenang Bersama Safina
+          <!--Kelola Keuangan Lebih Cerdas<br class="hidden md:block" /><br
+            class="md:hidden"
+          />
+          Hidup Lebih<br class="md:hidden" />
+          Berkah-->
+
+          Kelola Keuangan<br class="block md:hidden""> Lebih Cerdas<br />
+          Hidup Lebih Berkah
         </h1>
         <p
-          class="text-xl text-gray-500 mb-10 max-w-2xl mx-auto leading-relaxed"
+          class="text-md md:text-xl text-gray-500 mb-10 max-w-2xl mx-auto leading-relaxed"
         >
-          Asisten keuangan berbasis AI untuk Muslim modern yang ingin mengatur
-          keuangan secara sadar, rapi, dan terarah.
+          Asisten finansial cerdas yang membantumu mengelola budget, mencatat
+          transaksi, dan mencapai target masa depan dalam satu genggaman. Hadir
+          dengan prinsip Syariah untuk memastikan setiap langkah keuanganmu
+          lebih terarah, tenang, dan berkah.
         </p>
 
         <!-- Call to Action -->
@@ -135,23 +145,23 @@
             href="#daftar"
             class="inline-block bg-primary hover:bg-opacity-90 text-white px-10 py-4 rounded-full font-bold text-lg transition shadow-xl shadow-primary/30 transform hover:-translate-y-1"
           >
-            Mulai sekarang
+            Mulai perjalanan finansialmu
           </a>
         </div>
 
         <!-- Hero App Mockup -->
         <div
-          class="relative max-w-2xl mx-auto md:max-w-3xl lg:max-w-4xl -mt-44"
+          class="relative md:mx-auto md:max-w-3xl lg:max-w-4xl -mt-20 md:-mt-24"
         >
           <!-- Glowing cyan aura -->
           <div
-            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] h-[1200px] bg-[#0e9cb4] opacity-30 blur-[100px] rounded-full -z-10 pointer-events-none"
+            class="absolute top-[210%] md:top-[160%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1800px] h-[1200px] bg-[#0e9cb4] opacity-100 blur-[100px] rounded-full -z-10 pointer-events-none"
           ></div>
 
           <img
-            src="Group 9.png"
+            src="assets/hero-mockup.png"
             alt="Safina App Mockup"
-            class="w-full h-auto relative z-10 block drop-shadow-2xl"
+            class="h-auto relative z-10 block drop-shadow-2xl w-[180vw] max-w-none ml-[50%] -translate-x-1/2 md:w-full md:max-w-full md:ml-0 md:translate-x-0"
           />
         </div>
       </div>
@@ -159,38 +169,55 @@
 
     <!-- Tentang Kami (Dark Section) -->
     <section id="tentang" class="bg-dark text-white relative overflow-hidden">
+      <div class="block md:hidden">
+        <img
+          src="assets/tentang-kami-mobile-section-2.jpg"
+          alt="Tentang Kami Mobile Section"
+          class="w-full h-auto block"
+        />
+      </div>
       <div
-        class="container mx-auto px-6 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch"
+        class="container mx-auto px-6 max-w-7xl lg:grid lg:grid-cols-2 gap-0 lg:items-stretch hidden md:grid"
       >
-        <div class="flex flex-col justify-center py-20">
+        <div
+          class="pt-20 pb-16 lg:py-20 lg:flex lg:flex-col lg:justify-center relative"
+        >
           <div
             class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 text-gray-400 text-sm font-medium mb-4 border border-white/5 w-fit"
           >
             <span class="w-1.5 h-1.5 rounded-full bg-cyan-500"></span>
             Tentang kami
           </div>
+          <!-- Invisible float spacer with shape-outside for diagonal text wrapping -->
+          <span
+            class="float-right w-[50%] h-[360px] ml-3 -mr-6 lg:hidden"
+            style="
+              shape-outside: polygon(40% 0%, 100% 0%, 100% 100%, 10% 100%);
+              shape-margin: 14px;
+            "
+            aria-hidden="true"
+          ></span>
           <h2
-            class="text-3xl md:text-3xl lg:text-4xl font-bold mb-5 leading-tight"
+            class="text-sm md:text-5xl lg:text-4xl font-bold mb-5 leading-tight"
           >
-            Safina Membantu Kamu<br />Mengambil Kendali
+            Safina Membantu Kamu<br />Mengambil Kendali Penuh
           </h2>
-          <p class="text-gray-400 text-base mb-8 max-w-md leading-relaxed">
-            Dengan bantuan AI, Safina mengubah data keuangan menjadi insight
-            yang mudah dipahami dan bisa langsung kamu gunakan untuk mengambil
-            keputusan.
+          <p class="text-xs md:text-base text-gray-400 leading-relaxed">
+            Di Safina, kami percaya bahwa setiap rupiah memiliki makna. Sebagai
+            AI-Financial Companion, kami hadir bukan sekadar untuk mencatat
+            angka, melainkan untuk mengubah setiap data transaksi yang rumit
+            menjadi wawasan (insight) yang mudah kamu pahami. Dengan dukungan
+            kecerdasan buatan, Safina membantumu mengambil keputusan finansial
+            yang lebih bijak, terencana, dan tetap berada dalam koridor Syariah,
+            sehingga kamu bisa menjalani hidup dengan lebih tenang dan berkah.
           </p>
-          <a
-            href="#daftar"
-            class="inline-block bg-[#0ea5e9] hover:bg-[#06b6d4] text-white px-6 py-2.5 rounded-full font-semibold text-sm transition w-fit"
-          >
-            Mulai sekarang
-          </a>
+          <div class="clear-both lg:hidden"></div>
         </div>
 
-        <div class="relative flex items-end justify-center lg:justify-end">
-          <!-- iPhone Mockup -->
+        <div class="relative hidden lg:flex items-end justify-end">
+          <!-- iPhone Mockup - Desktop -->
           <img
-            src="iMockup - iPhone 13.png"
+            src="assets/half-phone-mockup.png"
             alt="Safina App Preview"
             class="w-full h-full object-contain object-bottom drop-shadow-2xl"
           />
@@ -199,7 +226,7 @@
     </section>
 
     <!-- Benefit Section -->
-    <section id="benefit" class="py-24 bg-surface">
+    <section id="benefit" class="py-10 md:py-24 bg-surface">
       <div class="container mx-auto px-6 max-w-7xl text-center">
         <!-- Badge -->
         <div
@@ -209,15 +236,17 @@
           Benefit
         </div>
 
-        <h2 class="text-4xl md:text-5xl font-bold mb-20">
-          Kenapa Harus Memilih<br />Safina?
+        <h2 class="text-2xl md:text-5xl font-bold mb-10 md:mb-20">
+          Kenapa Memilih SAFINA
+          <br />
+          sebagai Sahabat Finansialmu?
         </h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0">
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-0">
           <!-- Benefit 1 -->
-          <div class="border-l border-gray-200 pl-8 pr-8 text-left">
+          <div class="border-l border-gray-200 pl-2 pr-2 md:pl-8 md:pr-8 text-left mb-10 md:mb-0">
             <div
-              class="w-14 h-14 bg-[#f1adff] rounded-2xl flex items-center justify-center mb-6"
+              class="w-14 h-14 bg-[#f1adff] rounded-2xl flex items-center justify-center mb-2 md:mb-6"
             >
               <img
                 src="assets/neurology.svg"
@@ -225,16 +254,17 @@
                 class="w-8 h-8 object-contain"
               />
             </div>
-            <h3 class="text-xl font-bold mb-3">Smart Budgeting</h3>
-            <p class="text-gray-500 leading-relaxed">
-              AI membantu menyusun budget sesuai kebiasaanmu.
+            <h3 class="text-md md:text-xl font-bold mb-2 md:mb-3">Budgeting Pintar</h3>
+            <p class="text-sm md:text-base text-gray-500 leading-relaxed">
+              AI susun budget realistis dari pola belanjamu & beri pengingat
+              otomatis saat limit mendekat.
             </p>
           </div>
 
           <!-- Benefit 2 -->
-          <div class="border-l border-gray-200 pl-8 pr-8 text-left">
+          <div class="border-l border-gray-200 pl-2 pr-2 md:pl-8 md:pr-8 text-left mb-10 md:mb-0">
             <div
-              class="w-14 h-14 bg-[#93cc54] rounded-2xl flex items-center justify-center mb-6"
+              class="w-14 h-14 bg-[#93cc54] rounded-2xl flex items-center justify-center mb-2 md:mb-6"
             >
               <img
                 src="assets/prayer_times.svg"
@@ -242,16 +272,17 @@
                 class="w-8 h-8 object-contain"
               />
             </div>
-            <h3 class="text-xl font-bold mb-3">Built for Muslim Life</h3>
-            <p class="text-gray-500 leading-relaxed">
-              Dirancang untuk mendukung sedekah, zakat, dan prinsip halal.
+            <h3 class="text-md md:text-xl font-bold mb-2 md:mb-3">Prinsip Syariah</h3>
+            <p class="text-sm md:text-base text-gray-500 leading-relaxed">
+              Kelola zakat & sedekah sesuai Syariat. Diskusi wawasan finansial
+              Islam bersama asisten AI.
             </p>
           </div>
 
           <!-- Benefit 3 -->
-          <div class="border-l border-gray-200 pl-8 pr-8 text-left">
+          <div class="border-l border-gray-200 pl-2 pr-2 md:pl-8 md:pr-8 text-left mb-10 md:mb-0">
             <div
-              class="w-14 h-14 bg-[#55606b] rounded-2xl flex items-center justify-center mb-6"
+              class="w-14 h-14 bg-[#55606b] rounded-2xl flex items-center justify-center mb-2 md:mb-6"
             >
               <img
                 src="assets/lock.svg"
@@ -259,16 +290,17 @@
                 class="w-8 h-8 object-contain"
               />
             </div>
-            <h3 class="text-xl font-bold mb-3">Secure & Private</h3>
-            <p class="text-gray-500 leading-relaxed">
-              Data keuanganmu aman dengan standar keamanan tinggi.
+            <h3 class="text-md md:text-xl font-bold mb-2 md:mb-3">Praktis & Terintegrasi</h3>
+            <p class="text-sm md:text-base text-gray-500 leading-relaxed">
+              Catat praktis via WhatsApp & pantau detail di halaman ringkasan
+              website SAFINA kapan saja.
             </p>
           </div>
 
           <!-- Benefit 4 -->
-          <div class="border-l border-gray-200 pl-8 pr-8 text-left">
+          <div class="border-l border-gray-200 pl-2 pr-2 md:pl-8 md:pr-8 text-left">
             <div
-              class="w-14 h-14 bg-[#facc15] rounded-2xl flex items-center justify-center mb-6"
+              class="w-14 h-14 bg-[#facc15] rounded-2xl flex items-center justify-center mb-2 md:mb-6"
             >
               <img
                 src="assets/flash_on.svg"
@@ -276,9 +308,10 @@
                 class="w-8 h-8 object-contain"
               />
             </div>
-            <h3 class="text-xl font-bold mb-3">Simple & Practical</h3>
-            <p class="text-gray-500 leading-relaxed">
-              Antarmuka sederhana yang memudahkan.
+            <h3 class="text-md md:text-xl font-bold mb-2 md:mb-3">Aman & Privat</h3>
+            <p class="text-sm md:text-base text-gray-500 leading-relaxed">
+              Keamanan data tinggi & privasi terjaga. Catatan keuanganmu aman
+              dan hanya bisa diakses olehmu.
             </p>
           </div>
         </div>
@@ -286,23 +319,19 @@
     </section>
 
     <!-- Fitur Section -->
-    <section id="fitur" class="py-24 bg-white relative">
+    <section id="fitur" class="py-10 md:py-24 bg-white relative">
       <div class="container mx-auto px-6 max-w-7xl">
-        <div class="text-center max-w-3xl mx-auto mb-20">
+        <div class="text-center max-w-3xl mx-auto mb-5 md:mb-20">
           <div
             class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-50 text-primary text-sm font-semibold mb-6 border border-cyan-100"
           >
             <span class="w-2 h-2 rounded-full bg-primary"></span>
             Fitur
           </div>
-          <h2 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            Safina Membantu Kamu<br />Mengambil Kendali
+          <h2 class="text-2xl md:text-5xl font-bold mb-6 leading-tight">
+            Wujudkan Strategi Finansialmu
+            <br />dengan Fitur Cerdas SAFINA
           </h2>
-          <p class="text-gray-500 text-lg leading-relaxed">
-            Dengan bantuan AI, Safina mengubah data keuangan menjadi insight
-            yang mudah dipahami dan bisa langsung kamu gunakan untuk mengambil
-            keputusan.
-          </p>
         </div>
 
         <!-- Features Masonry Layout: Left 3 items | Right 2 items -->
@@ -311,15 +340,15 @@
           <div class="flex-1 flex flex-col gap-8">
             <!-- Fitur 1: Catat & Pantau -->
             <div
-              class="bg-surface rounded-[2.5rem] p-10 border border-gray-100 hover:border-gray-200 transition flex-1"
+              class="bg-surface rounded-[2.5rem] p-4 pb-8 md:p-10 border border-gray-100 hover:border-gray-200 transition flex-1"
             >
               <!-- Pemasukan & Pengeluaran Cards -->
               <div class="flex gap-4 mb-4">
                 <div
-                  class="flex-1 bg-white p-4 rounded-2xl border border-gray-100 shadow-sm"
+                  class="flex-1 bg-white p-4 rounded-3xl md:rounded-2xl border border-gray-100 shadow-sm"
                 >
                   <div
-                    class="flex items-center gap-2 text-sm text-gray-500 mb-2"
+                    class="flex items-center gap-2 text-xs md:text-sm text-gray-500 mb-2"
                   >
                     <div
                       class="w-8 h-8 rounded-lg bg-green-50 flex justify-center items-center border-2 border-[#87C054]"
@@ -332,7 +361,7 @@
                     </div>
                     Pemasukan
                   </div>
-                  <div class="text-xl font-extrabold text-gray-900">
+                  <div class="text-sm md:text-xl font-extrabold text-gray-900">
                     Rp 10.000.000
                   </div>
                   <div
@@ -355,13 +384,13 @@
                   </div>
                 </div>
                 <div
-                  class="flex-1 bg-secondary text-white p-4 rounded-2xl shadow-sm relative overflow-hidden"
+                  class="flex-1 bg-secondary text-white p-4 rounded-3xl md:rounded-2xl shadow-sm relative overflow-hidden"
                 >
                   <div
                     class="absolute top-0 right-0 w-24 h-24 bg-white/10 rounded-full -translate-y-8 translate-x-8"
                   ></div>
                   <div
-                    class="flex items-center gap-2 text-sm text-green-100 mb-2 font-medium"
+                    class="flex items-center gap-2 text-xs md:text-sm text-green-100 mb-2 font-medium"
                   >
                     <div
                       class="w-8 h-8 rounded-lg bg-white/20 flex justify-center items-center border-2 border-white/30"
@@ -374,7 +403,7 @@
                     </div>
                     Pengeluaran
                   </div>
-                  <div class="text-xl font-extrabold text-white">
+                  <div class="text-sm md:text-xl font-extrabold text-white">
                     Rp 7.700.000
                   </div>
                   <div
@@ -412,7 +441,7 @@
                     style="width: 23%"
                   ></div>
                 </div>
-                <div class="flex justify-between text-sm font-medium">
+                <div class="flex justify-between text-xs md:text-sm font-medium">
                   <div class="text-gray-900">
                     <span class="font-bold">Rp. 7.700.000</span>
                     <span class="text-red-500 ml-1">(77%)</span>
@@ -428,31 +457,36 @@
                 </div>
               </div>
               <h3 class="text-xl font-bold mb-4 text-primary">
-                Catat & Pantau Keuangan
+                Catat Kilat via WhatsApp,
+                <br />Pantau Real-Time di Website
               </h3>
-              <p class="text-gray-500 text-lg leading-relaxed">
-                Kamu bisa mencatat pemasukan dan pengeluaran, serta memantau
-                saldo secara real-time dalam satu dashboard.
+              <p class="text-gray-500 text-sm md:text-base leading-relaxed">
+                Catat transaksi secepat kirim pesan melalui teks, foto struk,
+                atau voice note di WhatsApp. Data otomatis terinput dan siap
+                kamu pantau secara real-time di halaman ringkasan yang rapi dan
+                transparan.
               </p>
             </div>
 
             <!-- Fitur 3: Tanya Langsung ke AI (text left, image right) -->
             <div
-              class="bg-surface rounded-[2.5rem] p-10 border border-gray-100 hover:border-gray-200 transition"
+              class="bg-surface rounded-[2.5rem] p-4 py-6 md:p-10 border border-gray-100 hover:border-gray-200 transition"
             >
-              <div class="flex flex-col sm:flex-row items-center gap-8">
+              <div class="flex flex-row items-center gap-4 md:gap-8">
                 <div class="flex-1">
-                  <h3 class="text-xl font-bold mb-4 text-primary">
-                    Tanya Langsung ke AI
+                  <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-4 text-primary">
+                    Diskusi Cerdas dengan Sahabat AI
                   </h3>
-                  <p class="text-gray-500 text-lg leading-relaxed">
-                    Butuh ringkasan bulan ini atau ingin tahu pengeluaran
-                    terbesar? Cukup tanya AI Safina kapan saja.
+                  <p class="text-gray-500 text-xs md:text-base leading-relaxed">
+                    Butuh ringkasan belanja atau diskusi wawasan keuangan
+                    Syariah? Tanya AI Safina kapan saja via chat. Dapatkan
+                    analisis mendalam dan saran hemat personal layaknya asisten
+                    pribadi.
                   </p>
                 </div>
-                <div class="flex-1 w-full flex items-center justify-center">
+                <div class="w-1/2 md:flex-1 flex-shrink-0 flex items-center justify-center">
                   <img
-                    src="Frame 1464203983.png"
+                    src="assets/feature-3.png"
                     alt="AI Chat Interface"
                     class="w-full h-auto object-contain"
                   />
@@ -462,23 +496,25 @@
 
             <!-- Fitur 4: Kelola Grup (image left, text right) -->
             <div
-              class="bg-surface rounded-[2.5rem] p-10 border border-gray-100 hover:border-gray-200 transition"
+              class="bg-surface rounded-[2.5rem] p-4 py-6 md:p-10 border border-gray-100 hover:border-gray-200 transition"
             >
-              <div class="flex flex-col sm:flex-row items-center gap-8">
-                <div class="flex-1 w-full flex items-center justify-center">
+              <div class="flex flex-row items-center gap-4 md:gap-8">
+                <div class="w-1/2 md:flex-1 flex-shrink-0 flex items-center justify-center">
                   <img
-                    src="Frame 1464203983 (1).png"
+                    src="assets/feature-4.png"
                     alt="Grup Keuangan"
                     class="w-full h-auto object-contain"
                   />
                 </div>
                 <div class="flex-1">
-                  <h3 class="text-xl font-bold mb-4 text-primary">
-                    Kelola grup
+                  <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-4 text-primary">
+                    Keuangan Bersama Jadi Lebih Transparan
                   </h3>
-                  <p class="text-gray-500 text-lg leading-relaxed">
-                    Membuat grup keuangan bersama keluarga atau kerabat untuk
-                    mencatat, memantau, dan mengatur pengeluaran secara bersama.
+                  <p class="text-gray-500 text-xs md:text-base leading-relaxed">
+                    Buat grup keuangan bersama keluarga atau kerabat untuk
+                    mencatat pengeluaran kolektif. Pastikan rencana belanja grup
+                    tetap terorganisir dan dapat dipantau dengan jelas oleh
+                    semua anggota.
                   </p>
                 </div>
               </div>
@@ -489,18 +525,20 @@
           <div class="flex-1 flex flex-col gap-8">
             <!-- Fitur 2: Atur Budget & Target (text top, image bottom) -->
             <div
-              class="bg-surface rounded-[2.5rem] p-10 border border-gray-100 hover:border-gray-200 transition flex flex-col"
+              class="bg-surface rounded-[2.5rem] p-4 py-6 md:p-10 border border-gray-100 hover:border-gray-200 transition flex flex-col"
             >
-              <h3 class="text-xl font-bold mb-4 text-primary">
-                Atur Budget & Target
+              <h3 class="text-xl font-bold mb-4 text-primary order-2 md:order-1">
+                Rencanakan Budget & Kejar Impianmu
               </h3>
-              <p class="text-gray-500 text-lg leading-relaxed mb-10">
-                Kelola budget bulanan dan target keuangan agar pengeluaran tetap
-                terkendali dan sesuai rencana.
+              <p class="text-gray-500 text-sm md:text-base leading-relaxed mb-0 md:mb-10 order-3 md:order-2">
+                Susun alokasi budget bulanan yang realistis bersama asisten AI.
+                Pantau progres target keuangan, dari dana darurat hingga
+                tabungan impian, agar setiap pengeluaran terkendali sesuai
+                rencana.
               </p>
-              <div class="w-full flex items-center justify-center mt-auto">
+              <div class="w-full flex items-center justify-center mt-auto mb-4 md:mb-0 order-1 md:order-3">
                 <img
-                  src="Frame 1464203985.png"
+                  src="assets/feature-2.png"
                   alt="Budgeting Visualization"
                   class="w-full h-auto object-contain"
                 />
@@ -509,10 +547,10 @@
 
             <!-- Fitur 5: Dapatkan Insight dari AI -->
             <div
-              class="bg-surface rounded-[2.5rem] p-10 border border-gray-100 hover:border-gray-200 transition flex flex-col flex-1"
+              class="bg-surface rounded-[2.5rem] p-4 py-6 md:p-10 border border-gray-100 hover:border-gray-200 transition flex flex-col flex-1"
             >
               <div
-                class="bg-[#e8f4f8] rounded-[1.5rem] p-4 mb-8 border-2 border-[#ABCAD6]"
+                class="bg-[#e8f4f8] rounded-[1.5rem] p-4 mb-4 md:mb-8 border-2 border-[#ABCAD6]"
               >
                 <div class="flex items-start gap-3 mb-5">
                   <div
@@ -565,11 +603,12 @@
                 </div>
               </div>
               <h3 class="text-xl font-bold mb-4 text-primary">
-                Dapatkan Insight dari AI
+                Evaluasi Otomatis untuk Hidup Berkah
               </h3>
-              <p class="text-gray-500 text-lg leading-relaxed">
-                Safina menganalisis data keuanganmu dan memberikan ringkasan,
-                pengingat, serta insight yang mudah dipahami.
+              <p class="text-gray-500 text-sm md:text-base leading-relaxed">
+                Terima analisis otomatis setiap jam 16:00 WIB berupa ringkasan
+                dan insight mendalam. SAFINA membantumu mengevaluasi pengeluaran
+                harian agar kondisi keuangan tetap sehat, tenang, dan berkah.
               </p>
             </div>
           </div>
@@ -601,79 +640,89 @@
         class="container mx-auto px-6 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch relative z-10"
       >
         <div
-          class="relative hidden lg:flex items-end justify-center lg:justify-start pe-20 pt-10"
+          class="relative hidden lg:flex items-end justify-center lg:justify-start pe-20 pt-10 order-1"
         >
           <img
-            src="Group 10.png"
+            src="screens-mockup.png"
             alt="Safina App Preview on Multiple Devices"
             class="w-full h-full object-contain object-bottom drop-shadow-2xl"
           />
         </div>
 
-        <div class="flex flex-col justify-center py-20">
+        <div class="flex flex-col justify-center items-center text-center lg:items-start lg:text-left py-10 md:py-20 order-1 lg:order-2">
           <div
             class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white text-sm font-semibold mb-6 backdrop-blur-md border border-white/20 w-fit"
           >
             <span class="w-2 h-2 rounded-full bg-white"></span>
-            Daftar
+            Tetap terhubung
           </div>
           <h2
-            class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-8 leading-tight"
+            class="text-3xl md:text-5xl font-extrabold mb-4 leading-tight"
           >
-            Coba Safina Sekarang dan Kelola Uangmu Lebih Teratur
+            Mari Tumbuh Bersama SAFINA
           </h2>
+          <p class="text-white/70 mb-8 text-sm md:text-base leading-relaxed">
+            Jadilah yang pertama tahu info fitur terbaru dan tips finansial
+            Syariah langsung di emailmu.
+          </p>
 
-          <form class="flex flex-col sm:flex-row mt-6 gap-4 w-full">
+          <form class="flex flex-row gap-3 w-full">
             <input
               type="email"
-              placeholder="Masukan emailmu"
-              class="flex-1 px-8 py-3.5 rounded-full text-gray-900 bg-white placeholder-gray-400 font-medium text-base focus:outline-none shadow-lg"
+              placeholder="Masukkan alamat email..."
+              class="flex-1 min-w-0 px-5 md:px-8 py-3.5 rounded-full text-gray-900 bg-white placeholder-gray-400 font-medium text-sm md:text-base focus:outline-none shadow-lg"
             />
             <button
               type="submit"
-              class="bg-secondary hover:bg-[#7abd38] text-white px-8 py-3.5 rounded-full font-bold text-base transition whitespace-nowrap shadow-lg w-full sm:w-auto"
+              class="bg-secondary hover:bg-[#7abd38] text-white px-5 md:px-8 py-3.5 rounded-full font-bold text-sm md:text-base transition whitespace-nowrap shadow-lg shrink-0"
             >
-              Mulai sekarang
+              Update Saya!
             </button>
           </form>
+        </div>
+
+        <!-- Mobile-only phone mockup image -->
+        <div
+          class="relative flex lg:hidden items-start justify-center order-3 h-[200px]"
+        >
+          <img
+            src="assets/screens-mockup.png"
+            alt="Safina App Preview on Multiple Devices"
+            class="w-[125%] max-w-none object-contain object-top drop-shadow-2xl"
+          />
         </div>
       </div>
     </section>
 
-    <!-- Kontak CTA Section -->
+    <!-- Bottom CTA Section -->
     <section class="p-6 bg-white relative z-10">
       <div class="container mx-auto max-w-7xl">
         <div
-          class="bg-secondary rounded-[3rem] p-12 md:p-24 text-center text-white relative overflow-hidden shadow-xl border border-green-400/30"
+          class="bg-secondary rounded-xl md:rounded-[3rem] p-8 md:p-24 text-center text-white relative overflow-hidden shadow-xl border border-green-400/30"
         >
           <!-- Background Image -->
           <img
-            src="Frame 1464204005.png"
-            alt="Kontak Background Decor"
+            src="assets/bottom-cta-bg.png"
+            alt="Bottom CTA Background Decor"
             class="absolute inset-0 w-full h-full object-cover z-0 scale-[1.05]"
           />
 
           <div class="relative z-10">
-            <div
-              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/20 text-white text-sm font-semibold mb-8 backdrop-blur-sm border border-white/30"
-            >
-              <span class="w-2 h-2 rounded-full bg-white"></span>
-              Kontak
-            </div>
-            <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-8">
-              Bergabung dengan Safina
+            <h2 class="text-2xl md:text-5xl font-extrabold mb-4 md:mb-8">
+              Siap Mengambil Kendali Penuh Atas Keuanganmu?
             </h2>
             <p
-              class="text-green-50 text-xl max-w-2xl mx-auto mb-12 font-medium"
+              class="text-green-50 text-md md:text-xl max-w-2xl mx-auto mb-6 md:mb-12 font-medium"
             >
-              Kelola budget bulanan dan target keuangan agar pengeluaran tetap
-              terkendali dan sesuai rencana.
+              Pantau setiap langkah finansialmu secara mendalam melalui halaman
+              ringkasan di website SAFINA. Mulai kelola uang lebih cerdas dan
+              rasakan ketenangan hidup yang lebih berkah hari ini.
             </p>
             <a
-              href="#kontak"
-              class="inline-block bg-white text-secondary hover:bg-gray-50 px-12 py-5 rounded-full font-bold text-lg transition shadow-xl transform hover:-translate-y-1"
+              href="#bottom_cta"
+              class="inline-block bg-white text-secondary hover:bg-gray-50 px-6 md:px-12 py-5 rounded-full font-bold text-md md:text-lg transition shadow-xl transform hover:-translate-y-1"
             >
-              Hubungi
+              Coba SAFINA Sekarang
             </a>
           </div>
         </div>
@@ -684,14 +733,14 @@
     <footer class="bg-white pb-12">
       <div class="container mx-auto px-6 max-w-7xl">
         <div
-          class="bg-[#0f0f0f] text-[#a1a1aa] py-5 px-8 sm:px-12 rounded-full flex flex-col md:flex-row justify-between items-center gap-4 shadow-xl"
+          class="bg-[#0f0f0f] text-[#a1a1aa] py-5 px-8 sm:px-12 rounded-xl md:rounded-full flex flex-col md:flex-row justify-between items-center gap-4 shadow-xl"
         >
           <div class="text-xs sm:text-sm font-medium">
             © 2026 Safina. Seluruh hak cipta dilindungi.
           </div>
 
           <div
-            class="flex flex-wrap justify-center gap-4 sm:space-x-4 text-xs sm:text-sm font-medium"
+            class="flex flex-wrap justify-center gap-4 sm:space-x-4 text-[8px] md:text-xs sm:text-sm font-medium"
           >
             <a
               href="#"
