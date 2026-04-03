@@ -33,29 +33,29 @@ const defaultEmulatorHost = matchesLocalHostname ? hostname : NORMALIZED_LOCALHO
 const computedEmulatorHost = emulatorHostOverride || defaultEmulatorHost || NORMALIZED_LOCALHOST
 
 const DEVELOPMENT_FIREBASE_CONFIG = {
-  apiKey: "AIzaSyAT81L_gsi3PWwxiz1FpoiUD54aYYhrkj8",
-  authDomain: "finalytics-development.firebaseapp.com",
-  projectId: "finalytics-development",
-  storageBucket: "finalytics-development.firebasestorage.app",
-  messagingSenderId: "334725384863",
-  appId: "1:334725384863:web:69d07127690da125c630aa"
+  apiKey: 'AIzaSyB_nqqLZOxCHy_PxMW0Z4k53Nc8u8VoonI',
+  authDomain: 'hijra-safina-dev.firebaseapp.com',
+  projectId: 'hijra-safina-dev',
+  storageBucket: 'hijra-safina-dev.firebasestorage.app',
+  messagingSenderId: '677734821284',
+  appId: '1:677734821284:web:1ec317f91e289efcb7a531',
+  measurementId: 'G-82PC945VMP',
 }
 const PRODUCTION_FIREBASE_CONFIG = {
-  apiKey: 'AIzaSyB9_J1AZkSbCM9v3PeV4m33qojHX51bLwg',
-  authDomain: 'finalytics-62350.firebaseapp.com',
-  projectId: 'finalytics-62350',
-  storageBucket: 'finalytics-62350.firebasestorage.app',
-  messagingSenderId: '586305419053',
-  appId: '1:586305419053:web:b94a325fd5b649340305a4',
+  apiKey: 'AIzaSyDJeVc2YBZFGSkx7aYdXu1ynikc7jy8ka4',
+  authDomain: 'hijra-safina-8ede9.firebaseapp.com',
+  projectId: 'hijra-safina-8ede9',
+  storageBucket: 'hijra-safina-8ede9.firebasestorage.app',
+  messagingSenderId: '322342640987',
+  appId: '1:322342640987:web:5b24f7447091e398718e7e',
+  measurementId: 'G-57V0G61R84',
 }
 
 export const CURRENT_FIREBASE_CONFIG = IS_PRODUCTION
   ? PRODUCTION_FIREBASE_CONFIG
   : DEVELOPMENT_FIREBASE_CONFIG
 
-export const USE_FIREBASE_EMULATORS = emulatorToggle === undefined
-  ? (!IS_PRODUCTION && matchesLocalHostname)
-  : emulatorToggle
+export const USE_FIREBASE_EMULATORS = false
 
 export const FIREBASE_EMULATOR_CONFIG = {
   host: computedEmulatorHost,
