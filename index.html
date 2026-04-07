@@ -12,7 +12,7 @@
 
     <script src="side-effects/auto-replace-app-url-href.mjs" type="module"></script>
     <script src="analytics/tracking.mjs" type="module"></script>
-    
+
     <script>
         // -- START OF POSTHOG INIT --
 
@@ -21,7 +21,7 @@
             api_host: 'https://us.i.posthog.com',
             defaults: '2026-01-30',
         })
-        
+
         // -- END OF POSTHOG INIT --
 
         const KNOWN_PRODUCTION_HOSTNAMES = ['safinalab.id', 'www.safinalab.id', 'app.safinalab.id']
@@ -30,7 +30,7 @@
 
         posthog.register({ env })
     </script>
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -137,7 +137,7 @@
           Hidup Lebih Simpel
         </h1>
         <p
-          class="text-md md:text-xl text-gray-500 mb-10 max-w-2xl mx-auto leading-relaxed"
+          class="text-sm md:text-xl text-gray-500 mb-10 max-w-2xl mx-auto leading-relaxed"
         >
             Bingung mulai ngatur keuangan dari mana?<br />SAFINA bantu kamu lihat kondisi kamu sekarang,<br />terus kasih langkah yang bisa langsung kamu jalanin.
         </p>
